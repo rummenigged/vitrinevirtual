@@ -9,15 +9,45 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="Materialize/css/materialize.min.css">
     <link rel="stylesheet" href="mdl/material.min.css">
+    <link rel="stylesheet" href="css/login.css">
     
 </head>
 <body>
-    <header></header>
+    
     <div class="container">
-        
+<!--
+       <div class="row">
+            
+       </div>      
+-->
+        <div class="row">
+            <form action="" method="post" class="col s12 m8 l6 offset-m2 offset-l3" id="autenticacao">
+               <fieldset class="valign-wrapper">
+                   <legend class="col s10 m10 l10 offset-s1 offset-m1 offset-l1 ">Login</legend>
+                    <div class="row">
+                        <div class="input-field col s12 m12 l12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <label for="login">Login</label>
+                            <input type="text" id="login" class="validate" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 m12 l12 ">
+                            <i class="material-icons prefix">lock</i>
+                            <label for="login">Senha</label>
+                            <input type="password" id="senha" class="validate" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="waves-effect waves-light btn col s10 offset-s1">Entrar</button>
+            </form>
+        </div>    
     </div>
     
 <script defer src="mdl/material.min.js"></script>
+<script defer src="materialize/js/materialize.min.js"></script>
+<script defer src="js/main.js"></script>
 <script type="application/javascript" src="js/jquery-1.12.0.min.js"></script>
 </body>
 </html>
