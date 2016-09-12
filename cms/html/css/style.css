@@ -43,6 +43,6 @@ header a{float: left; font-size: 20pt; margin-left: 5%; height: 5%;}
 #side-menu-content li a{border-left: 1px solid #D9221C;}    
 #side-menu-content{margin-top: 20px;}
 #side-menu-content ul li{font-size: 12pt;}
-.breadcrumbHack{display: block; font-size: 9pt; display: inline;}    
-.breadcrumbHack a{float: right;}    
+.breadcrumbHack{display: inline-block; font-size: 9pt; margin-top: 1%; text-align: center; float: right;}   
+.breadcrumbHack a i {}    
 }

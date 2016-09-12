@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../Materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../mdl/material.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastroProduto.css">
     
 </head>
 <body>
@@ -56,11 +57,107 @@
                     </ul>
                 </div>
         </aside>
+        
         <div class="content">    
            <div class="header-section row">   
-               <h3 class="col s12">Cadastrar Produto</h3>
+               <h3 class="col s6">Cadastrar Produto</h3>
+                <div class="breadcrumbHack col s2 offset-s4">
+                    <a href="#!" class="">Home -</a>
+                    <a href="#!" class="">Produtos -</a>
+                    <a href="#!" class="">Cadastrar</a>
+                </div>
+           </div>
+           
+           <section class="imagens">
+               <div class="row">
+                   <div class="col s4 m3 l1 offset-l1" ><img src="#" alt=""></div>
+                   <div class="col s4 m3 l1 offset-l1"><img src="#" alt=""></div>
+                   <div class="col s4 m3 l1 offset-l1"><img src="#" alt=""></div>
+                   <div class="col s4 m3 l1 offset-l1"><img src="#" alt=""></div>
+                   <div class="col s4 m3 l1 offset-l1"><img src="#" alt=""></div>
+                   <div class="col s4 m3 l1 offset-l1"><img src="#" alt=""></div>
+               </div>
+           </section>
+           
+           <section class="nome">
+               <div class="row">
+                    <h4 class="col s10 offset-s1">Nome</h4>  
+                    <input type="text" id="nomeProduto" class="col s10 offset-s1">
+               </div>
+           </section>
+           
+           <section class="descricao">
+               <div class="row">
+                    <h4 class="col s10 offset-s1">Descrição</h4>  
+                    <textarea name="descricao" id="descricaoProduto" cols="30" rows="10" class="col s10 offset-s1 materialize-textarea"></textarea>
+               </div>
+           </section>
+           
+           <section class="marca">
+               <div class="row">
+                    <h4 class="col s10 offset-s1">Marca</h4>  
+                    <input type="text" id="marcaProduto" class="col s10 offset-s1">
+               </div>
+           </section>
+              
+           <section class="tamanho">
+               <div class="row">
+                    <h4 class="col s10 offset-s1">Tamanhos</h4>  
+                    <input type="checkbox" id="tamanhoPP" class="col s1 offset-s1"/>
+                    <label for="tamanhoPP" class="col s1 offset-s1">PP</label>
+                    
+                    <input type="checkbox" id="tamanhoP" class="col s1 offset-s1"/>
+                    <label for="tamanhoP" class="col s1 offset-s1">P</label>
+                    
+                    <input type="checkbox" id="tamanhoM" class="col s1 offset-s1"/>
+                    <label for="tamanhoM" class="col s1 offset-s1">M</label>
+                    
+                    <input type="checkbox" id="tamanhoG" class="col s1 offset-s1"/>
+                    <label for="tamanhoG" class="col s1 offset-s1">G</label>
+                    
+                    <input type="checkbox" id="tamanhoGG" class="col s1 offset-s1"/>
+                    <label for="tamanhoGG" class="col s1 offset-s1">G</label>
+               </div>
+           </section>
+           
+           <section class="preco-desconto">
+               <div class="row">
+                   <h4 class="col s5 offset-s1">Preço</h4>
+                   <h4 class="col s5 offset-s1">Desconto</h4>
+                   
+               </div>
+           
+                    <div class="row">
+                        <input type="text" id="preco" class="col s3 offset-s1">     
+                        <input type="text" id="desconto" class="col s3 offset-s3">
+                    </div>
+           </section> 
+              
+           <section class="parcelas-juros">
+                <div class="row">
+                    <h4 class="col s5 offset-s1">Parcelas</h4>
+                    <h4 class="col s5 offset-s1">Juros</h4>    
+                </div>
+                
+                <div class="row">
+                    <input class="with-gap col s3 offset-s1"  type="radio" id="parcelasRadio" checked />
+                    <label for="parcelasRadio" class="col s3 offset-s1">Não Parcelado</label>
+                    
+                    <input class="with-gap col s3 offset-s3" type="radio" id="jurosRadio" checked />
+                    <label for="jurosRadio" class="col s3 offset-s3">Sem Juros</label>    
+                </div>           
+                
+                <div class="row">
+                    <input type="text" id="parcelas" class="col s3 offset-s1" disabled>     
+                    <input type="text" id="juros" class="col s3 offset-s3" disabled>
+                </div>
+           </section>
+           
+           <div class="row">
+                    <input type="submit" class="waves-light btn col s6 m4 l2 offset-s5 offset-m6 offset-l9" value="Cadastrar" id="cad-prod">
            </div>
         </div>
+        
 <script defer src="../mdl/material.min.js"></script>
 <script defer src="../materialize/js/materialize.min.js"></script>
 
