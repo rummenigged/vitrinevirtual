@@ -1,2 +1,4 @@
-.content{margin-bottom: 10%;}
+.content{margin-bottom: 5%;}
+.imagem-container{height: 100px; justify-content: center; display: flex; align-items: center; border-radius: 7px;}
+.imagem-container i{font-size: 40pt; cursor: pointer; color: #26a69a;}
 #cad-prod{margin-top: 5%;}

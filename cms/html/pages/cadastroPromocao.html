@@ -28,11 +28,12 @@
         </header>
         
         <aside class="side-menu">
-                <div id="side-menu-content">
-                    <div class="row">
+               <div class="row perfil">
                         <img src="#" alt="" class="col s2">
-                        <span id="nome" class="col s6 offset-s1">Rummenigge</span>
-                    </div>
+                        <span id="nome" class="col s10 ">Rummenigge Duarte</span>
+                        <span class="status col s6">Online</span>
+                </div>
+                <div id="side-menu-content">
                     <ul>
                         <li><a href="index.html">Dashboard</a></li>
                         <li><a href="#">Promoções</a>
@@ -72,8 +73,20 @@
                 <section class="banner">
                        <div class="row">
                            <h4 class="col s11 m11 l11 offset-s1 offset-m1 offset-l1">Banner</h4>
-                           <div class="upload-image col s10 m10 l10 offset-s1 offset-m1 offset-l1 card"></div>
-                           <div class="col s6 m4 l4 offset-s1 offset-m1 offset-l8"><input type="file" id="up-file"></div>
+                           <div class="upload-image col s10 m10 l10 offset-s1 offset-m1 offset-l1 card">
+                               <img src="#" alt="" id="foto-banner">
+                           </div>
+                           <div class="col s6 m4 l2 offset-s1 offset-m1 offset-l1 btn" id="up-banner">
+                               <label for="input-banner">Enviar</label>
+                               <input type="file" id="input-banner">
+                           </div>
+                           <span id="file-url" class="col s5">Nenhum Arquivo Selecionado</span>
+                           
+                           <div class="label-error col s10 offset-s1 card">
+                               <i class="material-icons">close</i>
+                               <h4>Tipo de Arquivo Inválido</h4>
+                               <p>O arquivo selecionado deve ser do tipo img(imagem) mas foi seleciodado um arquivo do tipo:</p> 
+                           </div>
                        </div>
                 </section>
 
@@ -84,13 +97,21 @@
                     </div>
                 </section>
 
-                <section class="duração">
+               <section class="regulamento">
                     <div class="row">
-                        <h4 class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">Duração</h4>
+                        <h4 class="col s11 m11 l11 offset-s1 offset-m1 offset-l1">Regulamento</h4>
+                        <textarea name="descricao" id="descricaoProduto" cols="30" rows="10" class="col s10 offset-s1 materialize-textarea"></textarea>
+                    </div>
+                </section>
+                
+                <section class="duracao">
+                    <div class="row">
+                    <h4 class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">Duração</h4>
+<!--
                         <div class="input-field col s11 l10 offset-s1 offset-l1">
                            <h5>Mês</h5>
                             <select>
-<!--                                <option value="" selected>Selecione um Mês</option>-->
+                                <option value="" selected>Selecione um Mês</option>
                                 <option value="1" selected>Janeiro</option>
                                 <option value="2">Fevereiro</option>
                                 <option value="3">Março</option>
@@ -108,18 +129,48 @@
 
                         <div class="col s11 m11 l10 offset-s1 offset-m1 offset-l1">
                            <h5>Dias</h5>
-                            <p class="range-field">
-                                <input type="range" id="range-slider">
-                            </p>
+                           
+                           <h6>Inicio</h6>
+                                <div class="row range">
+                                    <input type="range" id="inicioPromo" min="1" max="31" step="1" value="10" class="col s10">
+                                    <span id="inicioDia">10</span>
+                                </div>
+                                
+                            <h6>Fim</h6>
+                                <div class="row range">
+                                    <input type="range" id="fimPromo" min="1" max="31" step="1" value="15" class="col s10">
+                                    <span id="fimDia">15</span>
+                                </div>
                         </div>              
+-->
+                       <div class="col s5 offset-s1">
+                           <h5>Inicio</h5>
+                           <input type="date" class="datepicker" id="datepicker-inicio">
+                       </div>
+                       <div class="col s5">
+                           <h5>Fim</h5>
+                           <input type="date" class="datepicker" id="datepicker-fim" disabled >
+                       </div>
+                            <div class="label-error col s10 offset-s1 card">
+                               <i class="material-icons">close</i>
+                               <h4>Data Inicial Inválida</h4>
+                               <p>A data inicial da promoção deve ser no mínimo a data de hoje.</p> 
+                            </div>
+                            <div class="label-error col s10 offset-s1 card">
+                                <i class="material-icons">close</i>
+                                <h4>Data Final Inválida</h4>
+                                <p>A data final da promoção deve ser maior que a data inicial</p> 
+                            </div>
+
                     </div>
                 </section>
 
                 <div class="row">
-                    <input type="submit" class="waves-light btn col s6 m4 l2 offset-s5 offset-m6 offset-l9" value="Cadastrar" id="cad-promo">
+                    <input type="submit" class="waves-light btn col s6 m4 l2 offset-s5 offset-m7 offset-l9" value="Cadastrar" id="cad-promo">
                 </div>
             </form>                
         </div>
+        
 <script defer src="../mdl/material.min.js"></script>
 <script defer src="../materialize/js/materialize.min.js"></script>
 <script defer src="../noUiSlider/nouislider.min.js"></script>

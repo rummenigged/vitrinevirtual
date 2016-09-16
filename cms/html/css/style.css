@@ -12,7 +12,7 @@ header a{float: left; font-size: 20pt; margin-left: 5%; height: 5%;}
 .menu ul{float: right; margin-top: 4%;}
 
 /*SIDE-MENU*/
-.side-menu{ position: absolute; width: 50%; float: left; height: 100%; background-color: #283640; color: white; display: none; left: -50%;}
+.side-menu{position: absolute; width: 50%; float: left; height: 100%; background-color: #283640; color: white; display: none; left: -50%; padding-bottom: 10%;}
 .perfil{height: 80px; background-color: #314553; padding-top: 10%;}
 .perfil .status{color: greenyellow;}
 #side-menu-content{clear: right; margin-top: 10px; padding-left: 0.2%;}
@@ -26,6 +26,11 @@ header a{float: left; font-size: 20pt; margin-left: 5%; height: 5%;}
 .header-section h3{font-size: 18pt; font-weight: bold; color: #283640; float: right;}
 .content h5{font-size: 12pt;}
 .breadcrumbHack{display: none;}
+
+/*ALERTS LABELS*/
+.label-error{margin: 3% 4%; background-color: #ef5350; border-radius: 2px; color: white; display: none;}
+.label-error i{float: right; margin-top: 5px; cursor: pointer;}
+
 /*BREAKPOINTS*/
 
 /*MEDIO*/

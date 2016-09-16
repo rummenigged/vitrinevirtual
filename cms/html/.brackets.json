@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/wamp/www/vitrinevirtual/cms/html/noUiSlider/nouislider.min.js",
+        "C:/wamp/www/vitrinevirtual/cms/html/noUiSlider/nouislider.js",
+        "C:/wamp/www/vitrinevirtual/cms/html/mdl/material.min.js",
+        "C:/wamp/www/vitrinevirtual/cms/html/mdl/material.js"
+    ]
+}
