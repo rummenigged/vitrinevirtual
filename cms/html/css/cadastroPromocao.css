@@ -1,7 +1,8 @@
 
 /*.header-section{margin: -24px;}*/
-.upload-image{height: 150px; background-color: transparent; position: relative; padding: 10px 10px;}
-#foto-banner{width: 100%; height: 100%; display: none;}
+.upload-image{height: 150px; background-color: transparent; position: relative; padding: 10px 10px; border-radius: 7px;}
+#foto-banner{position: relative; width: 100%; height: 96%; margin-top: 1%; display: none;}
+#excluir-banner{display: none; margin-right: 2%;}
 #up-banner{cursor: pointer; position: relative;}
 input[type = 'file']{opacity: 0; position: absolute; left: 0; width: 100%; height: 100%; cursor: pointer;}
 label[for = 'input-banner']{color: white; font-size: 13pt; cursor: pointer;}
@@ -18,5 +19,5 @@ label[for = 'input-banner']{color: white; font-size: 13pt; cursor: pointer;}
 
 @media screen and (min-width: 993px){
 .upload-image{height: 400px;}
-#file-url{padding-top: 1.5%;}    
+#file-url{padding-top: 1.5%;}
 }

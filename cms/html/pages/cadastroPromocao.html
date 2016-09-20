@@ -19,10 +19,8 @@
                <a href="#" id="menu-sandwich"><i class="material-icons">menu</i></a>
                <h1 class="logo">Logo</h1>
                 <ul>
-                    <li><a href="!#"></a>Not 1</li>
-                    <li><a href="!#"></a>Not 2</li>
-                    <li><a href="!#"></a>Not 3</li>
-                    <li><a href="!#"></a>img</li>
+                    <li><i class="material-icons">notifications</i></li>
+                    <li><i class="material-icons">email</i></li>
                 </ul>
             </nav>            
         </header>
@@ -36,6 +34,16 @@
                 <div id="side-menu-content">
                     <ul>
                         <li><a href="index.html">Dashboard</a></li>
+                        
+                         <li>
+                                <a href="#" class="drop-menu">Categorias</a>
+                                
+                                <ul>
+                                    <li><a href="cadastroCategoria.html">Cadastrar</a></li>
+                                    <li><a href="listarCategoria.html">Listar</a></li>
+                                </ul>
+                        </li>
+                            
                         <li><a href="#">Promoções</a>
                             <ul>
                                 <li><a href="cadastroPromocao.html">Cadastrar</a></li>
@@ -69,18 +77,22 @@
                 </div>
             </div>
             
-            <form id="form-cad-promo">
                 <section class="banner">
                        <div class="row">
                            <h4 class="col s11 m11 l11 offset-s1 offset-m1 offset-l1">Banner</h4>
                            <div class="upload-image col s10 m10 l10 offset-s1 offset-m1 offset-l1 card">
-                               <img src="#" alt="" id="foto-banner">
+                                <img src="#" alt="" id="foto-banner">                                     
                            </div>
-                           <div class="col s6 m4 l2 offset-s1 offset-m1 offset-l1 btn" id="up-banner">
+                            
+                           
+                             <button class="col s2 m1 l1 offset-s1 offset-m1 offset-l1 red waves-effect waves-light btn" id="excluir-banner"><i class="material-icons">delete</i></button>    
+                           
+                           <div class="waves-effect waves-light col s4 m4 l2 offset-s1 offset-m1 offset-l1 btn" id="up-banner">
                                <label for="input-banner">Enviar</label>
                                <input type="file" id="input-banner">
                            </div>
-                           <span id="file-url" class="col s5">Nenhum Arquivo Selecionado</span>
+                           
+                           <span id="file-url" class="col s3">Nenhum Arquivo Selecionado</span>
                            
                            <div class="label-error col s10 offset-s1 card">
                                <i class="material-icons">close</i>
@@ -166,9 +178,9 @@
                 </section>
 
                 <div class="row">
-                    <input type="submit" class="waves-light btn col s6 m4 l2 offset-s5 offset-m7 offset-l9" value="Cadastrar" id="cad-promo">
-                </div>
-            </form>                
+<!--                    <input type="submit" class="waves-light btn col s6 m4 l2 offset-s5 offset-m7 offset-l9" value="Cadastrar" id="cad-promo">-->
+               <button class="waves-effect waves-light btn col s6 m4 l2 offset-s5 offset-m7 offset-l9" id="cad-promo">Cadastrar</button>
+                </div>            
         </div>
         
 <script defer src="../mdl/material.min.js"></script>

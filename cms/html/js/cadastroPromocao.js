@@ -25,6 +25,10 @@ $(document).ready(function(){
             reader.onloadend = function(){            
                 $(foto).attr('src', reader.result);
                 $('#foto-banner').show();
+                $('#up-banner').removeClass('offset-s1 offset-m1 offset-l1');
+                $('#up-banner label').html('Editar');
+                $('#excluir-banner').show();
+                
             };
 
             $('#file-url').text(input.name);            
@@ -32,6 +36,14 @@ $(document).ready(function(){
             $('.label-error').append(input.type);
             $('.label-error').show();
         }
+    });
+    
+    $('#excluir-banner').on('click', function(){
+        $('#foto-banner').hide();
+        $(this).hide();
+        $('#up-banner label').html('Enviar');
+        $('#up-banner').addClass('offset-s1 offset-m1 offset-l1');
+        $('#file-url').html('Nenhum Arquivo Selecionado');
     });
     
     //Range para escolher intervalo de dias da duração da promoção
@@ -44,6 +56,9 @@ $(document).ready(function(){
 //        $('#fimDia').text(this.value);
 //    });
      
+//    INICIALIZAÇÕES MATERIALIZE
+    
+//    DATEPICKER
     $('#datepicker-inicio').on('change', function(){
         console.log($('#datepicker-inicio'));
         $('#datepicker-fim').attr('disabled', false);
@@ -55,5 +70,6 @@ $(document).ready(function(){
     $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15 // Creates a dropdown of 15 years to control year
-  });
+    });
+     
 });
