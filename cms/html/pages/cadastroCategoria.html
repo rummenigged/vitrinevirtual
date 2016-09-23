@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../Materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../mdl/material.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastroCategoria.css">
     
 </head>
 <body>
@@ -37,7 +38,7 @@
                             <li><a href="index.html">Dashboard</a></li>
                             
                             <li>
-                                <a href="#" class="drop-menu">Categorias<i class="material-icons">keyboard_arrow_left</i></a>
+                                <a href="#" class="drop-menu">Categorias</a>
                                 
                                 <ul>
                                     <li><a href="cadastroCategoria.html">Cadastrar</a></li>
@@ -46,21 +47,21 @@
                             </li>
                             
                             <li>
-                                <a href="#" class="drop-menu">Promoções <i class="material-icons">keyboard_arrow_left</i></a>
+                                <a href="#" class="drop-menu">Promoções</a>
                                 
                                 <ul>
                                     <li><a href="cadastroPromocao.html">Cadastrar</a></li>
                                     <li><a href="listarPromocao.html">Listar</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" class="drop-menu">Produtos <i class="material-icons">keyboard_arrow_left</i></a>
+                            <li><a href="#" class="drop-menu">Produtos</a>
                                
                                 <ul>
                                     <li><a href="cadastroProduto.html">Cadastrar</a></li>
                                     <li><a href="listarProdutos.html">Listar</a></li>
                                 </ul>
                             </li>                            
-                            <li><a href="#" class="drop-menu">Contatos <i class="material-icons">keyboard_arrow_left</i></a>
+                            <li><a href="#" class="drop-menu">Contatos</a>
                                
                                 <ul>
                                     <li><a href="#">Mensagens</a></li>
@@ -76,15 +77,58 @@
                <div class="header-section row">   
                    <h3 class="col s6">Cadastrar Categoria</h3>
                        <div class="breadcrumbHack col s2 offset-s4">
-                            <a href="#!" class="">Home -</a>
-                            <a href="#!" class="">Dashboard</a>
+                            <a href="#!" class="">Home-</a>
+                            <a href="#!" class="">Categorias-</a>
+                            <a href="#!" class="">Cadastrar</a>
                        </div>
+               </div>
+               
+               <section class="banner">
+                       <div class="row">
+                           <h4 class="col s11 m11 l11 offset-s1 offset-m1 offset-l1">Background</h4>
+                           <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1 card" id="banner-container">
+                           </div>
+                                                       
+                           <button class="col s2 m1 l1 offset-s1 offset-m1 offset-l1 red waves-effect waves-light btn" id="excluir-banner"><i class="material-icons">delete</i></button>    
+                           
+                           <div class="waves-effect waves-light col s4 m4 l2 offset-s1 offset-m1 offset-l1 btn" id="send-image">
+                               <span>Enviar</span>
+                           </div>
+                           
+                           <span id="file-url" class="col s3">Nenhum Arquivo Selecionado</span>
+                           
+                           <input type="file" id="input-banner">
+                           
+                           <div class="label-error col s10 offset-s1 card">
+                               <i class="material-icons">close</i>
+                               <h4>Tipo de Arquivo Inválido</h4>
+                               <p>O arquivo selecionado deve ser do tipo img(imagem) mas foi seleciodado um arquivo do tipo:</p> 
+                           </div>
+                           
+                       </div>
+               </section>
+                
+               <section class="name">
+                   <div class="row">
+                       <h4 class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">Nome</h4>
+                       <div class="col s10 m10 l10 offset-s1 offset-m1 offset-l1">
+                            <input type="text" id="nome-categoria" class="validate">   
+                       </div>
+                   </div>
+               </section>
+               
+               <div class="row">
+                    <button class="waves-effect waves-light btn col s6 m4 l2 offset-s5 offset-m7 offset-l9 " id="cad-promo">Cadastrar</button>
                </div>
             </div>
         
-<script defer src="../mdl/material.min.js"></script>
+<!--<script defer src="../mdl/material.min.js"></script>-->
+<!--<script defer src="../js/main.js"></script>-->       
 <script defer src="../materialize/js/materialize.min.js"></script>
-<script defer src="../js/main.js"></script>
 <script type="application/javascript" src="../js/jquery-1.12.0.min.js"></script>    
+<script src="../js/cadastroCategoria.js"></script>
+<script src="../js/init.js"></script>     
+
+    
 </body>
 </html>

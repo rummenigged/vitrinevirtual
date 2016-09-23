@@ -27,8 +27,7 @@ $(document).ready(function(){
                 $('#foto-banner').show();
                 $('#up-banner').removeClass('offset-s1 offset-m1 offset-l1');
                 $('#up-banner label').html('Editar');
-                $('#excluir-banner').show();
-                
+                $('#excluir-banner').show();                
             };
 
             $('#file-url').text(input.name);            

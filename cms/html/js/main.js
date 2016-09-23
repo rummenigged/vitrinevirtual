@@ -1,8 +1,8 @@
-$(document).ready(function(){
+//$(document).ready(function(){
 
-      $(document).ready(function() {
-        $('select').material_select();
-      });
+//      $(document).ready(function() {
+//        $('select').material_select();
+//      });
     
     //MOSTRAR MENU-LATERAL FIXO NO DESKTOP 
     if($(window).width() > 900){
@@ -62,4 +62,4 @@ $(document).ready(function(){
         
     });
     
-});
+//});
