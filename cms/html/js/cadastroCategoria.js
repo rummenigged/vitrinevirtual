@@ -11,4 +11,8 @@ $(document).ready(function(){
         $('#send-image').addClass('offset-s1 offset-m1 offset-l1');
         $('#file-url').html('Nenhum Arquivo Selecionado');
     });
+    
+    $('.label-error > i').on('click', function(){
+        $(this).parent().hide();
+    });
 });
