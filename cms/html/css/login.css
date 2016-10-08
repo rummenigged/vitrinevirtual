@@ -10,8 +10,6 @@ img{max-width: 100%;}
 #autenticacao legend{position: relative; height: 100px; top: -50px; background-color: #26a69a; box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); border-radius: 7px; padding: 15% 0; text-align: center; font-size: 22pt; color: white;  font-weight: bold;}
 #autenticacao{box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); margin-top: 30%; border-radius: 7px; background-color: white;}
 
-.blue{background-color: blue;}
-
 /*BREAKPOINTS*/
 
 @media screen and (min-width: 480px){
