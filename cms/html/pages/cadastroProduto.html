@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>CMS</title>
@@ -9,254 +10,211 @@
     <link rel="stylesheet" href="../Materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../mdl/material.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/cadastroProduto.css">
-    
-</head>
+    <link rel="stylesheet" href="../css/cadastroProduto.css"> </head>
+
 <body>
-   
-        <header>
-            <nav class="menu">
-               <a href="#" id="menu-sandwich"><i class="material-icons">menu</i></a>
-               <h1 class="logo">Logo</h1>
-                <ul>
-                    <li><i class="material-icons">notifications</i></li>
-                    <li><i class="material-icons">email</i></li>
-                </ul>
-            </nav>            
-        </header>
-        
-        <aside class="side-menu">
-               <div class="row perfil">
-                        <img src="#" alt="" class="col s2">
-                        <span id="nome" class="col s10 ">Rummenigge Duarte</span>
-                        <span class="status col s6">Online</span>
-                </div>
-                <div id="side-menu-content">                    
+    <header>
+        <nav class="menu"> <a href="#" id="menu-sandwich"><i class="material-icons">menu</i></a>
+            <h1 class="logo">Logo</h1>
+            <ul>
+                <li><i class="material-icons">notifications</i></li>
+                <li><i class="material-icons">email</i></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="side-menu">
+        <div class="row perfil"> <img src="#" alt="" class="col s2"> <span id="nome" class="col s10 ">Rummenigge Duarte</span> <span class="status col s6">Online</span> </div>
+        <div id="side-menu-content">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li> <a href="#" class="drop-menu">Categorias</a>
                     <ul>
-                        <li><a href="index.html">Dashboard</a></li>
-                        
-                         <li>
-                                <a href="#" class="drop-menu">Categorias</a>
-                                
-                                <ul>
-                                    <li><a href="cadastroCategoria.html">Cadastrar</a></li>
-                                    <li><a href="listarCategoria.html">Listar</a></li>
-                                </ul>
-                        </li>
-                            
-                        <li><a href="#">Promoções</a>
-                            <ul>
-                                <li><a href="cadastroPromocao.html">Cadastrar</a></li>
-                                <li><a href="listarPromocoes.html">Listar</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Produtos</a>
-                            <ul>
-                                <li><a href="cadastroProduto.html">Cadastrar</a></li>
-                                <li><a href="listarProdutos.html">Listar</a></li>
-                            </ul>
-                        </li>                            
-                        <li><a href="#">Contatos</a>
-                            <ul>
-                                <li><a href="#">Mensagens</a></li>
-                                <li><a href="#">Suguestões</a></li>
-                            </ul>
-                        </li>    
-                        <li><a href="#">Configurações</a></li>
+                        <li><a href="cadastroCategoria.html">Cadastrar</a></li>
+                        <li><a href="listarCategoria.html">Listar</a></li>
                     </ul>
-                </div>
-        </aside>
-        
-        <div class="content">    
-           <div class="header-section row">   
-               <h3 class="col s6">Cadastrar Produto</h3>
-                <div class="breadcrumbHack col s2 offset-s4">
-                    <a href="#!" class="">Home -</a>
-                    <a href="#!" class="">Produtos -</a>
-                    <a href="#!" class="">Cadastrar</a>
-                </div>
-           </div>      
-          <section class="imagens">
-               <div class="row">
-                   <h4 class="col s10 offset-s1">Imagens</h4>  
-                   
-                    <div class="col s4 m4 l3 offset-l1 imagem-container">
-                       <div class="row">
-                          <div class="col s12 m12 l12 card foto-container" id="foto-0">
-                              <i class="material-icons">add</i>
-                              <input type="file" class="file-input">
-                          </div>       
-                       </div>
-                       <div class="row">
-                           <div class="acoes">
-                                <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
-                                <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
-                            </div>
-                       </div>   
-                    </div>
-
-                     <div class="col s4 m4 l3 offset-l1 imagem-container">
-                       <div class="row">
-                          <div class="col s12 m12 l12 card foto-container" id="foto-1">
-                              <i class="material-icons">add</i>
-                              <input type="file" class="file-input">
-                          </div>       
-                       </div>
-                       <div class="row">
-                            <div class="acoes">
-                                <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
-                                <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
-                            </div>
-                       </div>   
-                    </div>
-
-                      <div class="col s4 m4 l3 offset-l1 imagem-container">
-                       <div class="row">
-                          <div class="col s12 m12 l12 card foto-container" id="foto-2">
-                              <i class="material-icons">add</i>
-                              <input type="file" class="file-input">
-                          </div>       
-                       </div>
-                       <div class="row">
-                           <div class="acoes">
-                                    <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
-                                    <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
-                                </div>
-                        </div>
-                   </div>
-                   
-                  <div class="col s4 m4 l3 offset-l1 imagem-container">
-                       <div class="row">
-                          <div class="col s12 m12 l12 card foto-container" id="foto-3">
-                              <i class="material-icons">add</i>
-                              <input type="file" class="file-input">
-                          </div>       
-                       </div>
-                       <div class="row">
-                            <div class="acoes">
-                                <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
-                                <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
-                            </div>
-                       </div>   
-                    </div>
-
-                   <div class="col s4 m4 l3 offset-l1 imagem-container">
-                           <div class="row">
-                              <div class="col s12 m12 l12 card foto-container" id="foto-4">
-                                  <i class="material-icons">add</i>
-                                  <input type="file" class="file-input">
-                              </div>       
-                           </div>
-                           <div class="row">
-                               <div class="acoes">
-                                <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
-                                <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
-                            </div>
-                           </div>   
-                    </div>    
-
-                   <div class="col s4 m4 l3 offset-l1 imagem-container">
-                           <div class="row">
-                              <div class="col s12 m12 l12 card foto-container" id="foto-5">
-                                  <i class="material-icons">add</i>
-                                  <input type="file" class="file-input">
-                              </div>       
-                           </div>
-                           <div class="row">
-                              <div class="acoes">
-                                <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
-                                <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
-                            </div>
-                           </div>   
-                    </div>   
-                   </div>
-           </section>
-           <section class="nome">
-               <div class="row">
-                    <h4 class="col s10 offset-s1">Nome</h4>  
-                    <input type="text" id="nomeProduto" class="col s10 offset-s1">
-               </div>
-           </section>
-           
-           <section class="descricao">
-               <div class="row">
-                    <h4 class="col s10 offset-s1">Descrição</h4>  
-                    <textarea name="descricao" id="descricaoProduto" cols="30" rows="10" class="col s10 offset-s1 materialize-textarea"></textarea>
-               </div>
-           </section>
-           
-           <section class="marca">
-               <div class="row">
-                    <h4 class="col s10 offset-s1">Marca</h4>  
-                    <input type="text" id="marcaProduto" class="col s10 offset-s1">
-               </div>
-           </section>
-              
-           <section class="tamanho">
-               <div class="row">
-                    <h4 class="col s10 offset-s1">Tamanhos</h4>  
-                    <input type="checkbox" id="tamanhoPP" class="col s1 offset-s1"/>
-                    <label for="tamanhoPP" class="col s1 offset-s1">PP</label>
-                    
-                    <input type="checkbox" id="tamanhoP" class="col s1 offset-s1"/>
-                    <label for="tamanhoP" class="col s1 offset-s1">P</label>
-                    
-                    <input type="checkbox" id="tamanhoM" class="col s1 offset-s1"/>
-                    <label for="tamanhoM" class="col s1 offset-s1">M</label>
-                    
-                    <input type="checkbox" id="tamanhoG" class="col s1 offset-s1"/>
-                    <label for="tamanhoG" class="col s1 offset-s1">G</label>
-                    
-                    <input type="checkbox" id="tamanhoGG" class="col s1 offset-s1"/>
-                    <label for="tamanhoGG" class="col s1 offset-s1">GG</label>
-               </div>
-           </section>
-           
-           <section class="preco-desconto">
-               <div class="row">
-                   <h4 class="col s5 offset-s1">Preço</h4>
-                   <h4 class="col s5 offset-s1">Desconto</h4>
-                   
-               </div>
-           
+                </li>
+                <li><a href="#">Promoções</a>
+                    <ul>
+                        <li><a href="cadastroPromocao.html">Cadastrar</a></li>
+                        <li><a href="listarPromocoes.html">Listar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Produtos</a>
+                    <ul>
+                        <li><a href="cadastroProduto.html">Cadastrar</a></li>
+                        <li><a href="listarProdutos.html">Listar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contatos</a>
+                    <ul>
+                        <li><a href="#">Mensagens</a></li>
+                        <li><a href="#">Suguestões</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div class="content">
+        <div class="header-section row">
+            <h3 class="col s6">Cadastrar Produto</h3>
+            <div class="breadcrumbHack col s2 offset-s4"> <a href="#!" class="">Home -</a> <a href="#!" class="">Produtos -</a> <a href="#!" class="">Cadastrar</a> </div>
+        </div>
+        <section class="imagens">
+            <div class="row">
+                <h4 class="col s10 offset-s1">Imagens</h4>
+                <div class="col s4 m4 l3 offset-l1 imagem-container">
                     <div class="row">
-                        <input type="text" id="preco" class="col s3 offset-s1">     
-                        <input type="text" id="desconto" class="col s3 offset-s3">
+                        <div class="col s12 m12 l12 card foto-container" id="foto-0"> <i class="material-icons">add</i>
+                            <input type="file" class="file-input"> </div>
                     </div>
-           </section> 
-              
-           <section class="parcelas-juros">
+                    <div class="row">
+                        <div class="acoes">
+                            <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
+                            <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 m4 l3 offset-l1 imagem-container">
+                    <div class="row">
+                        <div class="col s12 m12 l12 card foto-container" id="foto-1"> <i class="material-icons">add</i>
+                            <input type="file" class="file-input"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="acoes">
+                            <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
+                            <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 m4 l3 offset-l1 imagem-container">
+                    <div class="row">
+                        <div class="col s12 m12 l12 card foto-container" id="foto-2"> <i class="material-icons">add</i>
+                            <input type="file" class="file-input"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="acoes">
+                            <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
+                            <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 m4 l3 offset-l1 imagem-container">
+                    <div class="row">
+                        <div class="col s12 m12 l12 card foto-container" id="foto-3"> <i class="material-icons">add</i>
+                            <input type="file" class="file-input"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="acoes">
+                            <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
+                            <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 m4 l3 offset-l1 imagem-container">
+                    <div class="row">
+                        <div class="col s12 m12 l12 card foto-container" id="foto-4"> <i class="material-icons">add</i>
+                            <input type="file" class="file-input"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="acoes">
+                            <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
+                            <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 m4 l3 offset-l1 imagem-container">
+                    <div class="row">
+                        <div class="col s12 m12 l12 card foto-container" id="foto-5"> <i class="material-icons">add</i>
+                            <input type="file" class="file-input"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="acoes">
+                            <button class="col s5 m5 l5 btn edit waves-effect waves-light"><i class="material-icons">edit</i></button>
+                            <button class="col s5 m5 l5 offset-s1 offset-m2 offset-l2 btn red delete waves-effect waves-light"><i class="material-icons">delete</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="nome">
+            <div class="row">
+                <h4 class="col s10 offset-s1">Nome</h4>
+                <input type="text" id="nomeProduto" class="col s10 offset-s1"> </div>
+        </section>
+        <section class="categoria">
+           <div class="row">
+           <h4 class="col s10 offset-s1">Categoria</h4>
+            <div class="input-field col s10 offset-s1">
+                <select>
+                    <option value="" disabled selected>Categorias...</option>
+                    <option value="1">Categoria 1</option>
+                    <option value="2">Categoria 2</option>
+                    <option value="3">Categoria 3</option>
+                </select>
+            </div> 
+            </div>
+            </section>
+            <section class="descricao">
+                <div class="row">
+                    <h4 class="col s10 offset-s1">Descrição</h4>
+                    <textarea name="descricao" id="descricaoProduto" cols="30" rows="10" class="col s10 offset-s1 materialize-textarea"></textarea>
+                </div>
+            </section>
+            <section class="marca">
+                <div class="row">
+                    <h4 class="col s10 offset-s1">Marca</h4>
+                    <input type="text" id="marcaProduto" class="col s10 offset-s1"> </div>
+            </section>
+            <section class="tamanho">
+                <div class="row">
+                    <h4 class="col s10 offset-s1">Tamanhos</h4>
+                    <input type="checkbox" id="tamanhoPP" class="col s1 offset-s1" />
+                    <label for="tamanhoPP" class="col s1 offset-s1">PP</label>
+                    <input type="checkbox" id="tamanhoP" class="col s1 offset-s1" />
+                    <label for="tamanhoP" class="col s1 offset-s1">P</label>
+                    <input type="checkbox" id="tamanhoM" class="col s1 offset-s1" />
+                    <label for="tamanhoM" class="col s1 offset-s1">M</label>
+                    <input type="checkbox" id="tamanhoG" class="col s1 offset-s1" />
+                    <label for="tamanhoG" class="col s1 offset-s1">G</label>
+                    <input type="checkbox" id="tamanhoGG" class="col s1 offset-s1" />
+                    <label for="tamanhoGG" class="col s1 offset-s1">GG</label>
+                </div>
+            </section>
+            <section class="preco-desconto">
+                <div class="row">
+                    <h4 class="col s5 offset-s1">Preço</h4>
+                    <h4 class="col s5 offset-s1">Desconto</h4> </div>
+                <div class="row">
+                    <input type="text" id="preco" class="col s3 offset-s1">
+                    <input type="text" id="desconto" class="col s3 offset-s3"> </div>
+            </section>
+            <section class="parcelas-juros">
                 <div class="row">
                     <h4 class="col s5 offset-s1">Parcelas</h4>
-                    <h4 class="col s5 offset-s1">Juros</h4>    
-                </div>
-                
+                    <h4 class="col s5 offset-s1">Juros</h4> </div>
                 <div class="row">
-                    <input class="col s3 offset-s1"  type="checkbox" id="parcelasCheck" checked />
+                    <input class="col s3 offset-s1" type="checkbox" id="parcelasCheck" checked />
                     <label for="parcelasCheck" class="col s3 offset-s1">Não Parcelado</label>
-                    
                     <input class="col s3 offset-s3" type="checkbox" id="jurosCheck" checked />
-                    <label for="jurosCheck" class="col s3 offset-s3">Sem Juros</label>    
-                </div>           
-                
-                <div class="row">
-                    <input type="text" id="parcelas" class="col s3 offset-s1" disabled>     
-                    <input type="text" id="juros" class="col s3 offset-s3" disabled>
+                    <label for="jurosCheck" class="col s3 offset-s3">Sem Juros</label>
                 </div>
-           </section>
-           
-           <div class="row">
-                    <button class="waves-effect waves-light btn col s6 m4 l2 offset-s5 offset-m6 offset-l9" id="cad-prod">Cadastrar</button>
-           </div>
-        </div>
-<!--        
+                <div class="row">
+                    <input type="text" id="parcelas" class="col s3 offset-s1" disabled>
+                    <input type="text" id="juros" class="col s3 offset-s3" disabled> </div>
+            </section>
+            <div class="row">
+                <button class="waves-effect waves-light btn col s6 m4 l2 offset-s5 offset-m6 offset-l9" id="cad-prod">Cadastrar</button>
+            </div>
+    </div>
+    <!--        
 <script defer src="../mdl/material.min.js"></script>
 <script defer src="../js/main.js"></script>
 -->
-    
-<script defer src="../materialize/js/materialize.min.js"></script>    
-<script type="application/javascript" src="../js/jquery-1.12.0.min.js"></script>    
-<script defer type="application/javascript" src="../js/cadastroProduto.js"></script>    
-<script src="../js/init.js"></script>
+    <script defer src="../materialize/js/materialize.min.js"></script>
+    <script type="application/javascript" src="../js/jquery-1.12.0.min.js"></script>
+    <script defer type="application/javascript" src="../js/cadastroProduto.js"></script>
+    <script src="../js/init.js"></script>
 </body>
+
 </html>
