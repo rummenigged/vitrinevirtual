@@ -4,7 +4,7 @@
 .foto-container img{position: relative; width: 100%; height: 100%;}
 .acoes{display: none;}
 .acoes button i{font-size: 20pt;}
-#input-foto{display: none;}
+.imagem-container input[type = 'file']{display: none;}
 #cad-prod{margin-top: 5%;}
 
 /*BREAKPOINTS*/

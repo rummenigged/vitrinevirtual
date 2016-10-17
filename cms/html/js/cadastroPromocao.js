@@ -6,7 +6,7 @@ $(document).ready(function(){
         getImageFile('#banner-container','#input-banner','#send-image', '#excluir-banner', '#file-url', 'Banner Categoria');   
     });
     
-    $('#excluir-banner').on('click', function(){
+    $('#excluir-banner').on('click', function(){        
         $('#banner-container img').hide();
         $(this).hide();
         $('#send-image span').html('Enviar');
