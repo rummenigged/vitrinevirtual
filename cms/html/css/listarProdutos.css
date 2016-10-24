@@ -1,0 +1,18 @@
+#searchField{margin-bottom: 5%; }
+#ordenar{ border-radius: 7px; justify-content: space-between; display: flex; align-items: center; cursor: pointer; color: white; font-size: 18pt;}
+#searchField{border-radius: 7px;}
+#search{height: 64px; font-size: 30pt; font-weight: bold;}
+.input-field label i{font-size: 30pt; margin-top: 20%;}
+.input-field input {margin-left: 5%;}
+.produto{height: 100px;}
+.card-action span{padding: 3% 4%; margin-bottom: 5%; color: teal; font-weight: bold;}
+#fab{position: fixed; bottom: 0; right: 5%;}
+#fab img{position: relative; margin: 3%;}
+
+
+@media screen and (min-width: 993px){
+#searchField{border-radius: 7px; margin-right: 5%;}
+.input-field input {margin-left: 2%;}
+.input-field label i{margin-top: 0;}
+#fab{position: fixed; bottom: 0; right: 3%;}
+}

@@ -2,7 +2,7 @@
 
       $(document).ready(function() {
         $('select').material_select();
-      });
+      
     
     //MOSTRAR MENU-LATERAL FIXO NO DESKTOP 
     if($(window).width() > 900){
@@ -61,5 +61,6 @@
     $('.drop-menu').on('click', function(){
         
     });
-    
+          
+    });
 //});

@@ -9,6 +9,8 @@ input[type = 'file']{display: none;}
 #file-url{overflow: hidden; padding-top: 6.5%; font-weight: bold; font-size: 12pt;}
 .disabled{border-bottom: 1px solid #ef5350;}
 .content{margin-bottom: 5%;}
+#nome-promocao{font-size: 22pt; font-weight: bold};
+#descricao-promocao{font-size: 26pt; font-weight: bold};
 #cad-promo{margin-top: 5%;}
 /*.range span{padding: 1% 5%; background-color: #26a69a; border-radius: 10px 10px 10px 0px; color: white; font-weight: bold;}*/
 

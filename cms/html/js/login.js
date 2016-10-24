@@ -9,4 +9,8 @@ $(document).ready(function(){
     $("#autenticacao").on('submit', function(){
         
     });
+    
+    $("#login").on('click', function(){
+        window.location.replace("../pages/index.html");        
+    });
 });

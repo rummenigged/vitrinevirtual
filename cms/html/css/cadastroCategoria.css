@@ -5,6 +5,7 @@
 #send-image span{color: white; font-size: 13pt; cursor: pointer;}
 input[type = 'file']{display: none;}
 #file-url{overflow: hidden; padding-top: 6.5%; font-weight: bold; font-size: 12pt;}
+#nome-categoria{font-size: 22pt; font-weight: bold};
 #cad-categoria{margin-top: 5%;}
 
 @media screen and (min-width: 601px){
